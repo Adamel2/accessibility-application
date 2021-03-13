@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch,Redirect } from "react-router-dom";
 import "./App.css";
 import Advertisement from "./components/Advertisement/Advertisement";
 import Footer from "./components/Footer/Footer";
@@ -15,9 +15,10 @@ function App() {
       <BrowserRouter>
 
       <Switch>
-          <Route exact path="/" component={Advertisement}/>
-          <Route  path="/menu" component={Menu}/>
-          <Route  path="/myOrder" component={MyOrder}/>
+          <Route exact path="/accessibility-application" component={Advertisement}/>
+          <Route  path="/accessibility-application/menu" component={Menu}/>
+          <Route  path="/accessibility-application/myOrder" component={MyOrder}/>
+          <Redirect from="/" to="/accessibility-application" />
 
       </Switch>
       
