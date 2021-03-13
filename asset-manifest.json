@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/accessibility-application/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/accessibility-application/static/js/main.f6211667.chunk.js",
-    "main.js.map": "/accessibility-application/static/js/main.f6211667.chunk.js.map",
-    "runtime-main.js": "/accessibility-application/static/js/runtime-main.41d51948.js",
-    "runtime-main.js.map": "/accessibility-application/static/js/runtime-main.41d51948.js.map",
-    "static/js/2.b09023b0.chunk.js": "/accessibility-application/static/js/2.b09023b0.chunk.js",
-    "static/js/2.b09023b0.chunk.js.map": "/accessibility-application/static/js/2.b09023b0.chunk.js.map",
-    "static/js/3.11c263a7.chunk.js": "/accessibility-application/static/js/3.11c263a7.chunk.js",
-    "static/js/3.11c263a7.chunk.js.map": "/accessibility-application/static/js/3.11c263a7.chunk.js.map",
+    "main.css": "/accessibility-application/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/accessibility-application/static/js/main.367fa74b.chunk.js",
+    "main.js.map": "/accessibility-application/static/js/main.367fa74b.chunk.js.map",
+    "runtime-main.js": "/accessibility-application/static/js/runtime-main.c4042ad1.js",
+    "runtime-main.js.map": "/accessibility-application/static/js/runtime-main.c4042ad1.js.map",
+    "static/js/2.08187f82.chunk.js": "/accessibility-application/static/js/2.08187f82.chunk.js",
+    "static/js/2.08187f82.chunk.js.map": "/accessibility-application/static/js/2.08187f82.chunk.js.map",
+    "static/js/3.f742cacc.chunk.js": "/accessibility-application/static/js/3.f742cacc.chunk.js",
+    "static/js/3.f742cacc.chunk.js.map": "/accessibility-application/static/js/3.f742cacc.chunk.js.map",
     "index.html": "/accessibility-application/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/accessibility-application/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.b09023b0.chunk.js.LICENSE.txt": "/accessibility-application/static/js/2.b09023b0.chunk.js.LICENSE.txt",
+    "static/css/main.9d5b29c0.chunk.css.map": "/accessibility-application/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.08187f82.chunk.js.LICENSE.txt": "/accessibility-application/static/js/2.08187f82.chunk.js.LICENSE.txt",
     "static/media/food-cover3.67b9b931.jpeg": "/accessibility-application/static/media/food-cover3.67b9b931.jpeg",
     "static/media/pizza-cover.bd0c6d33.jpeg": "/accessibility-application/static/media/pizza-cover.bd0c6d33.jpeg",
     "static/media/pizza-cover2.ab083b7f.jpeg": "/accessibility-application/static/media/pizza-cover2.ab083b7f.jpeg",
     "static/media/pizza.c67343b7.jpeg": "/accessibility-application/static/media/pizza.c67343b7.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.41d51948.js",
-    "static/js/2.b09023b0.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.f6211667.chunk.js"
+    "static/js/runtime-main.c4042ad1.js",
+    "static/js/2.08187f82.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.367fa74b.chunk.js"
   ]
 }
