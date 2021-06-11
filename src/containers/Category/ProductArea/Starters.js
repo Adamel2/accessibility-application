@@ -7,7 +7,7 @@ function Starters() {
 
     const [list, setList] = useState([])
     const handleDesserts = async () => {
-        await axios.get("http://localhost:8080/v1/findAllProductByCategoryId/4beac189-ba9c-4ccf-9ab2-d4fa456022fb")
+        await axios.get("http://18.224.24.80:8080/v1/findAllProductByCategoryId/4beac189-ba9c-4ccf-9ab2-d4fa456022fb")
             .then(response => setList(response.data))
             .then(error => console.log(error))
     }

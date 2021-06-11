@@ -11,7 +11,7 @@ function Menu() {
 
     const [listCategory, setListCategory] = useState([]);
     const displayCategory = async () => {
-        await axios.get("http://localhost:8080/v1/findAllCategory")
+        await axios.get("http://18.224.24.80:8080/v1/findAllCategory")
             .then(response => setListCategory(response.data))
     }
 

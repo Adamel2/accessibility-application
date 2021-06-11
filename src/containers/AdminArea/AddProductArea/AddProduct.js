@@ -14,7 +14,7 @@ function AddProduct() {
         let myTotal = Number(total);
         setPrice(myTotal);
         console.log(category , name , description , total);
-        await axios.post('http://localhost:8080/v1/addProduct', {
+        await axios.post('http://18.224.24.80:8080/v1/addProduct', {
             'category_id':category,
             'product_name': name,
             'product_price': price,
@@ -25,7 +25,7 @@ function AddProduct() {
           });
     }
     const handleCategory = async () => {
-        await axios.get("http://localhost:8080/v1/findAllCategory")
+        await axios.get("http://18.224.24.80:8080/v1/findAllCategory")
             .then(response => setListCategory(response.data))
     }
 

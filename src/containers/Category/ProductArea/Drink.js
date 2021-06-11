@@ -6,7 +6,7 @@ function Drink() {
 
     const [list, setList] = useState([])
     const handleDesserts = async () => {
-        await axios.get("http://localhost:8080/v1/findAllProductByCategoryId/fb7569ed-7cb9-4107-b3b0-ae84012cfd25")
+        await axios.get("http://18.224.24.80:8080/v1/findAllProductByCategoryId/fb7569ed-7cb9-4107-b3b0-ae84012cfd25")
             .then(response => setList(response.data))
     }
 

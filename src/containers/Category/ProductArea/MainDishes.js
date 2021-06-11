@@ -6,7 +6,7 @@ function MainDishes() {
 
     const [list, setList] = useState([])
     const handleDesserts = async () => {
-        await axios.get("http://localhost:8080/v1/findAllProductByCategoryId/8b010cde-95e4-46e0-8173-e2db1cb21ff4")
+        await axios.get("http://18.224.24.80:8080/v1/findAllProductByCategoryId/8b010cde-95e4-46e0-8173-e2db1cb21ff4")
             .then(response => setList(response.data))
     }
 
