@@ -23,7 +23,25 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+#zoom-in{
+    position:sticky !important;
+    z-index: 1000;
 
+   
+  
+}
+#zoom-out{
+    position:sticky !important;
+    z-index: 1000;
+
+}
+.footer {
+    position: relative !important; 
+    height: 100px;
+    margin-top: 50%;
+    bottom: 0 !important;
+    width: 100%;
+}
 .App-link {
   color: #61dafb;
 }

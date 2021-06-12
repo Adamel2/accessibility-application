@@ -55,6 +55,7 @@ return (
                 <Card.Title>{props.name}</Card.Title>
                 <Card.Title>{props.description}</Card.Title>
                 <button onClick={()=> handleLinkComponent()} className="btn bg-primary">Order now</button>
+                <img src="https://img.icons8.com/emoji/48/000000/face-savoring-food.png"/>
                 {/* <Link onClick={()=> handleLinkComponent()} className="btn bg-primary">Order now</Link> */}
             </Card.Body>
         </Card>

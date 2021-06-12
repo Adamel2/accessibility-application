@@ -10,11 +10,13 @@ import Drink from "../Category/ProductArea/Drink";
 function Menu() {
 
     const [listCategory, setListCategory] = useState([]);
+
+
     const displayCategory = async () => {
         await axios.get("http://18.224.24.80:8080/v1/findAllCategory")
             .then(response => setListCategory(response.data))
     }
-
+    
     useEffect(() => {
         displayCategory();
     }, []);
@@ -34,7 +36,6 @@ function Menu() {
                             <ul className="d-flex flex-column justify-content-center">
 
                                 {listCategory.map((item, index) => <Category key={item.category_id} id={item.category_id} name={item.category_name} description={item.description} photo={item.photo} />)}
-
 
                             </ul>
                         </div>

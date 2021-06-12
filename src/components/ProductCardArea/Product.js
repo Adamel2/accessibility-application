@@ -1,4 +1,5 @@
 import React from 'react'
+import Swal from "sweetalert2"
 
 import Invented from "../../assets/desserets/invented.jpeg"
 import Mixed from "../../assets/desserets/mixed.jpeg"
@@ -85,7 +86,14 @@ function Product(props) {
         return Menu;
     }
     const handleProduct = () =>{
-        localStorage.setItem(props.product_id+Math.floor(Math.random()*234234),JSON.stringify({name:props.product_name,price:Number(props.price)}))
+        localStorage.setItem(new Date().getTime(),JSON.stringify({name:props.product_name,price:Number(props.price)}))
+        Swal.fire({
+            position: 'top-center',
+            icon: 'success',
+            title: 'Good',
+            showConfirmButton: false,
+            timer: 1500
+          })
     }
 
     return (
@@ -98,6 +106,7 @@ function Product(props) {
                     <p className="card-text">{props.product_description}</p>
                     <p className="card-text">{props.price}$</p>
                     <button onClick={handleProduct} className="btn btn-primary">add to your Order...</button>
+                    <img src="https://img.icons8.com/color/48/000000/eating-person.png"/>
                 </div>
             </div>
         </li>
