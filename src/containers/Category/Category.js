@@ -47,15 +47,31 @@ function Category(props) {
         }
     }
 
+    const handleIcon = () => {
+        if (props.photo === "starters") {
+            return "https://img.icons8.com/plasticine/100/000000/food-and-wine.png"
+        }
+        if (props.photo === "main-dishes") {
+            return "https://img.icons8.com/plasticine/100/000000/steak-rare.png";
+        }
+        if (props.photo === "drink") {
+            return "https://img.icons8.com/emoji/96/000000/tropical-drink.png";
+        }
+        if (props.photo === "desserts") {
+            return "https://img.icons8.com/emoji/96/000000/cupcake-emoji.png";
+        }
+        return maindishes;
+    }
+
 return (
     <li id={props.id} className="list-inline-item m-3 d-flex flex-column justify-content-center">
         <Card style={{ width: "18rem" }}>
             <Card.Img alt={props.description} variant="top" src={handleImage()} />
-            <Card.Body>
+            <Card.Body style={{backgroundColor:'grey'}}>
                 <Card.Title>{props.name}</Card.Title>
                 <Card.Title>{props.description}</Card.Title>
                 <button onClick={()=> handleLinkComponent()} className="btn bg-primary">Order now</button>
-                <img src="https://img.icons8.com/emoji/48/000000/face-savoring-food.png"/>
+                <img src={handleIcon()}/>
                 {/* <Link onClick={()=> handleLinkComponent()} className="btn bg-primary">Order now</Link> */}
             </Card.Body>
         </Card>

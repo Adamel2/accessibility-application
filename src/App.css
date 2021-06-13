@@ -13,6 +13,12 @@
   }
 }
 
+.zoom {
+    position:sticky !important;
+    z-index: 1000;
+    margin: 20px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,18 +29,13 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-#zoom-in{
-    position:sticky !important;
-    z-index: 1000;
+.zoom-in{
+    margin: 5px;
 
    
   
 }
-#zoom-out{
-    position:sticky !important;
-    z-index: 1000;
 
-}
 .footer {
     position: relative !important; 
     height: 100px;

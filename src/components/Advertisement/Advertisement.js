@@ -16,7 +16,7 @@ function Advertisement() {
                         <img
                             className="d-block w-100"
                             src={FirstCover}
-                            alt="First slide"
+                            alt="Pizza Slide Advertisement"
                         />
                         <Carousel.Caption>
                             <h3 className="text-white"></h3>
@@ -27,7 +27,7 @@ function Advertisement() {
                         <img
                             className="d-block w-100"
                             src={SecondCover}
-                            alt="Second slide"
+                            alt="Pizza Slide Advertisement"
                         />
 
                         <Carousel.Caption>
@@ -39,7 +39,7 @@ function Advertisement() {
                         <img
                             className="d-block w-100"
                             src={ThirdCover}
-                            alt="Third slide"
+                            alt="Spaghetti Slide Advertisement"
                         />
 
                         <Carousel.Caption>

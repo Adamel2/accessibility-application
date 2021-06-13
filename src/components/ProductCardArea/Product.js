@@ -101,7 +101,7 @@ function Product(props) {
 
             <div className="card" style={{width:'18rem'}}>
                 <img className="card-img-top" alt={props.product_description} src={handleImage()}  />
-                <div className="card-body">
+                <div className="card-body" style={{backgroundColor:'grey'}}>
                     <h5 className="card-title">{props.product_name}</h5>
                     <p className="card-text">{props.product_description}</p>
                     <p className="card-text">{props.price}$</p>
