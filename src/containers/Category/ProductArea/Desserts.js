@@ -15,8 +15,10 @@ function Desserts() {
     }, []);
     return (
 
-        <div className="d-flex flex-column justify-content-center m-3">
-            <ul className="d-flex flex-column justify-content-center">
+
+
+        <div className="d-flex flex-rows justify-content-center m-3">
+            <ul className="d-flex flex-rows justify-content-center">
 
             {list.map((item )=> <Product key={item.product_id} product_id={item.product_id} product_name={item.product_name} product_description={item.product_description} price={item.product_price} photo={item.photo}/>)}
             </ul>

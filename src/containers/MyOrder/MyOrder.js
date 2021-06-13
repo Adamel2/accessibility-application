@@ -27,9 +27,9 @@ function MyOrder() {
         Swal.fire({
             position: 'top-center',
             icon: 'success',
-            title: 'Thank you for choose Israel Restaurant',
+            title: 'Thank you for choose Israel Restaurant,few minute you get the order... ',
             showConfirmButton: false,
-            timer: 1500
+            timer: 4000
           })
         localStorage.clear();
         setTimeout(()=>{
@@ -94,7 +94,8 @@ function MyOrder() {
 
                     </tbody>
                 </Table>
-                {isOrder === true && totalPrice>0 && <div>
+                {isOrder === true && totalPrice > 0 && <div>
+                    <h2 className="text-success">Your order has been sent to the kitchen...please wait!</h2>
                 <img src="https://img.icons8.com/dusk/64/000000/waiter.png"/>
                     <div className="progress">
                     <div className="progress-bar" role="progressbar" style={{width: timer.toString()+'%'}} aria-valuenow={timer.toString()} aria-valuemin="0" aria-valuemax="100">{timer}%</div>

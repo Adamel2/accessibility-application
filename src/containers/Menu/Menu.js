@@ -33,7 +33,7 @@ function Menu() {
                                 <Route path="/starters" component={Starters} />
                             </Switch>
 
-                            <ul className="d-flex flex-column justify-content-center">
+                            <ul className="d-flex flex-rows justify-content-center">
 
                                 {listCategory.map((item, index) => <Category key={item.category_id} id={item.category_id} name={item.category_name} description={item.description} photo={item.photo} />)}
 

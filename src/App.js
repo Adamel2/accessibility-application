@@ -79,10 +79,10 @@ function App() {
     return (
         <div>
             {flag && <div className="row zoom">
-                <button className="btn bg-secondary zoom-in" id="zoom-in" onClick={handlePageZoomIn} ref={button}><img src="https://img.icons8.com/ultraviolet/40/000000/zoom-in--v2.png"/></button>
-                <button className="btn bg-secondary zoom-in" id="zoom-out" onClick={handlePageZoomOut}><img src="https://img.icons8.com/ultraviolet/40/000000/zoom-out.png"/></button>
-                <button className="btn bg-secondary zoom-in" id="color" onClick={handleColor}><img src="https://img.icons8.com/dusk/64/000000/color-dropper.png"/></button>
-                <button className="btn bg-secondary zoom-in" id="default-zoom" onClick={handleDefaultZoom}><img src="https://img.icons8.com/cute-clipart/64/000000/zoom-to-extents.png"/></button>
+                <button className="btn bg-secondary zoom-in" id="zoom-in" onClick={handlePageZoomIn} ref={button}><img src="https://img.icons8.com/ultraviolet/40/000000/zoom-in--v2.png" /></button>
+                <button className="btn bg-secondary zoom-in" id="zoom-out" onClick={handlePageZoomOut}><img src="https://img.icons8.com/ultraviolet/40/000000/zoom-out.png" /></button>
+                <button className="btn bg-secondary zoom-in" id="color" onClick={handleColor}><img src="https://img.icons8.com/dusk/64/000000/color-dropper.png" /></button>
+                <button className="btn bg-secondary zoom-in" id="default-zoom" onClick={handleDefaultZoom}><img src="https://img.icons8.com/cute-clipart/64/000000/zoom-to-extents.png" /></button>
             </div>}
             <BrowserRouter>
 
@@ -96,14 +96,20 @@ function App() {
                                     <Navbar.Brand href="/accessibility-application">Restaurant</Navbar.Brand>
                                     <Nav className="mr-auto">
                                         <Link className="btn btn-light text-dark m-1" to="/accessibility-application/menu">Menu</Link>
-                                        <Link className="btn btn-light text-dark m-1" to="/accessibility-application/myOrder">My Order</Link>
+                                        {/* <Link className="btn btn-light text-dark m-1" to="/accessibility-application/myOrder">My Order</Link> */}
                                         <button className="btn btn-light text-dark m-1" onClick={handleZoomButtons}>accessibility</button>
                                     </Nav>
                                 </Navbar>
                             </div>
                         </div>
-                        <div id="my-App" style={colorFlag ? { backgroundColor: 'rgb(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ')', color: brightness > 125 ? 'black' : 'white' } : {}}>
 
+                        <div id="my-App" style={colorFlag ? { backgroundColor: 'rgb(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ')', color: brightness > 125 ? 'black' : 'white' } : {}}>
+                            <div className="row">
+                                <div className="col-12">
+                                    <h2 className="m-3">Your Order</h2>
+                                    <MyOrder />
+                                </div>
+                            </div>
                             <Switch>
                                 <Route exact path="/accessibility-application" component={Advertisement} exact />
                                 <Route exact path="/" component={Advertisement} />

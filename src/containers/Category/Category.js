@@ -65,7 +65,7 @@ function Category(props) {
 
 return (
     <li id={props.id} className="list-inline-item m-3 d-flex flex-column justify-content-center">
-        <Card style={{ width: "18rem" }}>
+        <Card style={{width:'20rem',height:"40rem"}}>
             <Card.Img alt={props.description} variant="top" src={handleImage()} />
             <Card.Body style={{backgroundColor:'grey'}}>
                 <Card.Title>{props.name}</Card.Title>

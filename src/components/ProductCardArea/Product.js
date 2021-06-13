@@ -94,18 +94,19 @@ function Product(props) {
             showConfirmButton: false,
             timer: 1500
           })
+          window.location.reload();
     }
 
     return (
         <li className="align-self-center m-3">
 
-            <div className="card" style={{width:'18rem'}}>
+            <div className="card" style={{width:'20rem',height:"50rem"}}>
                 <img className="card-img-top" alt={props.product_description} src={handleImage()}  />
                 <div className="card-body" style={{backgroundColor:'grey'}}>
                     <h5 className="card-title">{props.product_name}</h5>
                     <p className="card-text">{props.product_description}</p>
                     <p className="card-text">{props.price}$</p>
-                    <button onClick={handleProduct} className="btn btn-primary">add to your Order...</button>
+                    <button onClick={handleProduct} className="btn btn-primary bottom">add to your Order...</button>
                     <img src="https://img.icons8.com/color/48/000000/eating-person.png"/>
                 </div>
             </div>
